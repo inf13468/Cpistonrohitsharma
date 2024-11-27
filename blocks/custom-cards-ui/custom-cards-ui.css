@@ -1,0 +1,46 @@
+.custom-cards-ui > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 14px;
+    position: relative;
+  }
+  
+  .custom-cards-ui > ul > li {
+    border: 1px solid #dadada;
+    background-color: var(--background-color);
+    opacity: .56;
+    
+  }
+  .custom-cards-ui > ul li:after{
+    width: 0;
+    content: '';
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 72px solid #ffea00;
+    border-bottom: 54px solid transparent;
+    display: block;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+  }
+  
+  .custom-cards-ui .cards-card-body {
+    margin: 16px;
+  }
+  
+  .custom-cards-ui .cards-card-image {
+    line-height: 0;
+  }
+  
+  .custom-cards-ui > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+ 
+  .cards-card-body p{
+    font-size: 14px;
+  }

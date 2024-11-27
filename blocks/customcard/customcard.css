@@ -1,0 +1,39 @@
+.customcard > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 24px;
+  }
+  
+  .customcard > ul > li {
+    /* border: 1px solid #dadada; */
+    background-color: var(--background-color);
+    padding-top: 30px;
+  }
+  
+  .customcard .cards-card-body {
+    margin: 16px;
+    text-align: center;
+  }
+  
+  .customcard .cards-card-image {
+    line-height: 0;
+    text-align: center;
+  }
+  
+  .customcard > ul > li img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 164px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 164px;
+  }
+  .customcard img{
+    text-align: center;
+  }
+  

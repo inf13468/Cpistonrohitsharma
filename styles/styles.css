@@ -16,8 +16,8 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --link-color: #000000;
+  --link-hover-color: #ffff;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -155,7 +155,7 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
+  color:#fff;
   text-decoration: none;
   word-break: break-word;
 }
@@ -168,7 +168,7 @@ a:hover {
 /* buttons */
 a.button:any-link,
 button {
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
@@ -186,7 +186,15 @@ button {
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap; */
+  background-color: var(--brandPrimary, #ffea00);
+    border-radius: var(--buttonBorderRadius, 0);
+    color: var(--textColor, #202020);
+    float: left;
+    font-size: var(--fontSizeSmall, 14px);
+    font-weight: var(--fontWeightBold, 600);
+    padding: 1em 2.5em;
+    text-transform: uppercase;
 }
 
 a.button:hover,
@@ -217,7 +225,7 @@ main img {
 }
 
 .icon {
-  display: inline-block;
+  /* display: inline-block; */
   height: 24px;
   width: 24px;
 }
@@ -254,4 +262,122 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+footer>.footer>div>div>.default-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 500px);
+}
+
+footer>.footer>div>div>.default-content-wrapper>ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  list-style: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer>.footer>div>div>.default-content-wrapper>p>a>picture>img {
+  margin-bottom: 7px;
+  margin-top: 7px;
+  max-width: 8rem;
+  height: auto;
+}
+
+footer>.footer>div>.section-footer>.default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  line-height: 1.50;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+footer>.footer>div>div>.default-content-wrapper>ul>li:hover {
+  text-decoration: underline;
+}
+
+.featured-artic > div{
+  display: flex;
+  width: 100%;
+}
+.featured-artic > div div img{
+  display: flex;
+}
+.featured-artic>div div:last-child{
+  background-color:#eee ;
+  width: 60%;
+  padding: 0px 30px;
+}
+.high-lightbutton p {
+  padding-left: 0px;
+  background-color: var(--brandPrimary, #ffea00);
+
+}
+#recent-articles {
+  border-bottom: 2px solid var(--brand-primary, #ffea00);
+    content: "";
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 12px;
+    width: 227px;
+}
+#next-adventures{
+  border-bottom: 2px solid var(--brand-primary, #ffea00);
+  content: "";
+  display: block;
+  padding-top: 8px;
+  margin-bottom: 12px;
+  width: 247px;
+}
+#our-contributors{
+  border-bottom: 2px solid var(--brand-primary, #ffea00);
+    content: "";
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 12px;
+    width: 247px;
+}
+.about-section{
+  padding-top: 120px;
+}
+.magazine-section {
+  padding-top: 120px;
+}
+
+
+.cards-card-body p .icon{
+ background-color: rgb(105, 105, 105);
+ padding: 10px;
+}
+.cards-card-body p .icon img{
+  height: 24px;
+  width: 24px;
+  border-radius: 0px;
+  position: relative;
+  top:7px;
+}
+#all-articles{
+    border-bottom: 2px solid var(--brand-primary, #ffea00);
+    content: "";
+    display: block;
+    padding-top: 8px;
+    margin-bottom: 12px;
+    width: 157px;
+}
+.cards-card-body p .icon-lock-closed{
+  background: none;
+    position: absolute;
+    top: 7px;
+  
+    z-index: 3;
+    margin-left: -15px;
+    
 }
