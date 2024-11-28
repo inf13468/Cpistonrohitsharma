@@ -1,7 +1,11 @@
 .carousel .carousel-slides-container {
     position: relative;
   }
-  
+  .section.carousel-container .carousel-wrapper{
+    padding: 0 !important;
+    max-width: 100%;
+
+  }
   .carousel .carousel-slides,
   .carousel .carousel-slide-indicators {
     list-style: none;
@@ -92,8 +96,7 @@
     left: 1049px;
     top: 216px;
     border: 2px solid #ffffff;
-    right: -39px;
-    left: 1022px;
+    left: 1080px;
     background-color: #ffffff;
     color: black;
 
